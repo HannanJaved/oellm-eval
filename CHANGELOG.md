@@ -16,6 +16,8 @@ it before comparing runs made with different versions.
 
 ### Changed results
 
+- LUMI container: `lm-eval[api,tasks]` 0.4.13 with `datasets>=4` and `transformers<5.20`, PolyMath's scoring dependencies, and patches so `dclm-core-22`'s `agieval_lsat_ar`, `squadv2` and `coqa` run at n_shot>0. Applies once the image is rebuilt (#130).
+
 ### Added
 
 ### Changed
