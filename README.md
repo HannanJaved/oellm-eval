@@ -46,6 +46,9 @@ Task groups are pre-defined evaluation suites in [`task-groups.yaml`](oellm/reso
 
 Available task groups:
 - `crows-pairs` - CrowS-Pairs social bias benchmark (English, 0-shot, `pct_stereotype`)
+- `bpb-corpus` - Bits-per-byte on held-out text (WikiText-2, 0-shot, `bits_per_byte`).  For BPB on your own text, see [docs/TASKS.md](docs/TASKS.md#bits-per-byte-on-your-own-text)
+- `bpb-flores-eu` - Bits-per-byte on FLORES-200 devtest in the 36 OpenEuroLLM target languages (0-shot, `bits_per_byte`, lower is better). Each source article's sentences are scored as one document. `facebook/flores` is gated, so the HF token must have access
+- `bpb-mc-en` - Gold-answer bits-per-byte on English multiple-choice tasks (ARC-Easy/Challenge, HellaSwag, OpenBookQA, PIQA, Social IQa, Winogrande; 5-shot, `bits_per_byte`, lower is better).
 - `open-sci-0.01` - Standard benchmarks (COPA, MMLU, HellaSwag, ARC, etc.)
 - `belebele-eu-5-shot` - Belebele European language tasks
 - `flores-200-eu-to-eng` / `flores-200-eng-to-eu` - Translation tasks
